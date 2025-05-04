@@ -24,12 +24,34 @@ require(["esri/Map", "esri/views/MapView", "esri/Graphic"], function (Map, MapVi
         },
         symbol: {
             type: "simple-marker",
-            color: [226, 119, 40]
+            color: [200, 10, 90],
+            outline:{
+                 color: "white",
+                width: 1
+                },
         }
     })
     mapView.on("click", function(event){
         console.log(event);
-        document.querySelector("#latLng").innerHTML = `<b>Latitude:</b> ${event.mapPoint.latitude}, <b>Longitude:</b> ${event.mapPoint.longitude}`
+        document.querySelector("#latLng").innerHTML = `<b>Latitude:</b> ${event.mapPoint.latitude}, <b>Longitude:</b> ${event.mapPoint.longitude}`;
+        var customMarkers = new Graphic({
+            geometry: event.mapPoint,
+            symbol: {
+                popupTemplate: {
+                    title:"point",
+                    content:document.querySelector("#latLng").innerHTML
+                },
+                type: "simple-marker",
+                style: "cross",
+                color: "red",
+                size: 10,
+                outline: {
+                    color:"black",
+                    width: 1
+                }
+            },
+        })
+        mapView.graphics.add(customMarkers)
     })
     mapView.graphics.add(marker)
 })
