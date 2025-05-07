@@ -1,0 +1,88 @@
+{
+    "workbench.colorTheme": "Ayu Dark Bordered",
+    "editor.fontFamily": "Fira Code",
+    "editor.lineHeight": 23,
+    "editor.fontSize": 18,
+    // Prettier
+    "prettier.singleQuote": true,
+    "prettier.trailingComma": "es5",
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "editor.rulers": [100],
+    "workbench.colorCustomizations": {
+      "editorRuler.foreground": "#ff6296"},  
+    // JavaScript
+    "[javascript]": {
+      "editor.tabSize": 2,
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    // "editor.suggest.showSnippets": false,
+    // "editor.suggest.showWords": false,
+    // "editor.acceptSuggestionOnEnter": "off",
+    // Vue
+    "[vue]": {
+      "editor.tabSize": 2,
+      // "editor.defaultFormatter": "johnsoncodehk.volar"
+      "editor.defaultFormatter": "Vue.volar"
+    },
+    // Scss
+    "[scss]": {
+      "editor.tabSize": 2,
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    // PHP
+    "[php]": {
+      "editor.defaultFormatter": "kokororin.vscode-phpfmt"
+    },
+    "php.validate.run": "onSave",
+    "php.suggest.basic": false,
+    "emmet.excludeLanguages": ["php"],
+    // PHP formatter
+    "phpfmt.php_bin": "\"C:\\laragon\\bin\\php\\php-7.4.19-Win32-vc15-x64\\php.exe\"",
+    "phpfmt.psr2": true,
+    // Terminal
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "workbench.editor.splitInGroupLayout": "vertical",
+    "files.exclude": {
+      "": true,
+      "**/.git": false
+    },
+    "search.useIgnoreFiles": false,
+    "todohighlight.isEnable": true,
+    "todohighlight.keywords": [
+      {
+        "text": "@TODO:",
+        "color": "#fff",
+        "borderRadius": "3px", //NOTE: using borderRadius along with `border` or you will see nothing change
+        "backgroundColor": "#1d4ed8"
+      },
+      {
+        "text": "@todo:",
+        "color": "#fff",
+        "borderRadius": "3px", //NOTE: using borderRadius along with `border` or you will see nothing change
+        "backgroundColor": "#1d4ed8"
+      }
+    ],
+    "[html]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.minimap.enabled": false,
+    "editor.unicodeHighlight.invisibleCharacters": false,
+    "html.format.wrapAttributes": "preserve",
+    "html.format.wrapLineLength": 0,
+    "html.format.enable": false,
+    "[typescriptreact]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "vue.codeActions.savingTimeLimit": 1500,
+    "[python]": {
+      "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "python.formatting.provider": "none",
+    "workbench.editor.empty.hint": "hidden",
+    "cSpell.words": [
+      "Qhsgvo"
+    ]
+  }
