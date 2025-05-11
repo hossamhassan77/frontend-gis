@@ -36,18 +36,19 @@ export default function MapView() {
       // Dynamically generate popup
       raptorNestLayer.when(() => {
         const fieldInfos = raptorNestLayer.fields
-          .filter(f => !["OBJECTID", "Shape", "GlobalID"].includes(f.name))
-          .map(f => ({
-            fieldName: f.name,
-            label: f.alias || f.name,
-            format:
+        .filter(f => !["OBJECTID", "Shape", "GlobalID"].includes(f.name))
+        .map(f => ({
+          fieldName: f.name,
+          label: f.alias || f.name,
+          format:
               f.type === "date"
-                ? { dateFormat: "short-date" }
+              ? { dateFormat: "short-date" }
                 : f.type === "double" || f.type === "integer"
                 ? { digitSeparator: true, places: 2 }
                 : undefined
-          }));
-        raptorNestLayer.popupTemplate = {
+              }));
+            console.log(fieldInfos)
+              raptorNestLayer.popupTemplate = {
           title: raptorNestLayer.title || "Feature Info",
           content: [{
             type: "fields",
