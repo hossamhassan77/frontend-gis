@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+#map-info {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    background-color: white;
+    padding: 10px;
+    border-radius:8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    max-width: 300px;
+    z-index: 10;
+}

@@ -1,10 +1,13 @@
 import './App.css';
-import MapView from './components/MapView';
+import MapWithMapImageLayer from './components/mapImage';
 
 function App() {
   return (
     <div className="App">
-      <MapView />
+      <MapWithMapImageLayer />
+      <div id='map-info'>
+        <p><strong>Curser location</strong></p>
+      </div>
     </div>
   );
 }
