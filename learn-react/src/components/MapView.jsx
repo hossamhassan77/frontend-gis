@@ -1,6 +1,10 @@
 import { useEffect, useRef } from 'react';
 import { loadModules } from 'esri-loader';
 
+
+export function tryingToImport() {
+  return 'trying to import';
+}
 export default function MapView() {
   const mapRef = useRef(null);
   useEffect(() => {
